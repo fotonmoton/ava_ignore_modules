@@ -13,7 +13,7 @@ export default {
   compileEnhancements: false,
   require: [
     './config/jsdom.setup.js',
-    '@babel/register',
+    './config/babel.register.js',
   ],
   babel: {
     extensions: ['jsx'],
