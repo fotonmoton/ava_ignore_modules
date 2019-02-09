@@ -1,0 +1,35 @@
+{
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "airbnb"
+    ],
+    "rules": {
+        "max-len": [
+            "error",
+            {
+                "code": 80,
+                "tabWidth": 4
+            }
+        ],
+        "react/prop-types": [2],
+        "import/no-extraneous-dependencies": [
+          "error",
+          {"devDependencies": true}
+        ],
+        "no-unused-vars": [2, {"args": "all", "argsIgnorePattern": "^_"}]
+    },
+    "parser": "babel-eslint",
+    "plugins": [
+        "react"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "env": {
+        "browser": true,
+        "node": true
+    }
+}
